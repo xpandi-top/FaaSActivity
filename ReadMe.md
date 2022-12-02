@@ -51,7 +51,7 @@ The `uploadObjectProcedure` method is about some common code and logic of functi
 
 Modify the variables `projectID`(line 57) and `objectName`(line 50) in `UploadObject`.
 
-The following code is from line 46 - line 54 of `src/main/java/functions/UploadObject.java`. This code implements uploading content from memory \(in this case the contents String\) to the google cloud storage. We first need to create a storage object which can access the Google Cloud Storage service from Java. We then create a BlobInfo object that describes the bucketname and objectname for saving the blob using the BlobId class. Then upload the contents to the bucket. 
+The following code is from line 57 - line 67 of `src/main/java/functions/UploadObject.java`. This code implements uploading content from memory \(in this case the contents String\) to the google cloud storage. We first need to create a storage object which can access the Google Cloud Storage service from Java. We then create a BlobInfo object that describes the bucketname and objectname for saving the blob using the BlobId class. Then upload the contents to the bucket. 
 ```java
         String projectID = "GPROJECT_ID"; //Todo: The ID of GCP Project, Replace `GPROJECT_ID`with `project_id` in the provided json file
         // Create connection to google cloud storage service, provide project ID and the service account credentials.
